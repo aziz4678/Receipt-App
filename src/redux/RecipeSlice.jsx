@@ -129,5 +129,5 @@ const recipeSlice = createSlice({
     },
 });
 
-export const { clearMealDetail } = recipeSlice.actions;
+export const { clearMealDetail, clearMeals } = recipeSlice.actions;
 export default recipeSlice.reducer;
