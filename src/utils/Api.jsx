@@ -11,3 +11,6 @@ export const fetchMealsByCategory = (category) =>
 
 export const fetchMealDetail = (id) =>
   axios.get(`${BASE_URL}/lookup.php?i=${id}`);
+
+export const fetchMealsBySearch = (query) =>
+  axios.get(`${BASE_URL}/search.php?s=${query}`);
