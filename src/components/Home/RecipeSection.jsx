@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getDefaultMeals, searchMeals } from "../redux/RecipeSlice";
+import { getDefaultMeals, searchMeals } from "../../redux/RecipeSlice";
 import Category from "./Recipe/Category";
 import RecipeList from "./Recipe/RecipeList";
-import SkeletonLoader from "./SkeletonLoader";
+import SkeletonLoader from "../SkeletonLoader";
 
 export default function RecipeSection({ query }) {
   const dispatch = useDispatch();

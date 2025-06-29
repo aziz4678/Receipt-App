@@ -1,5 +1,5 @@
 import React from "react";
-import CTA from "../assets/img/cta.png";
+import CTA from "../../assets/img/cta.png";
 
 export default function CTASection() {
   return (

@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
-import Hero from "../assets/img/hero.png";
+import Hero from "../../assets/img/hero.png";
 import { useDispatch } from "react-redux";
-import { searchMeals, clearMeals } from "../redux/RecipeSlice";
+import { searchMeals, clearMeals } from "../../redux/RecipeSlice";
 
 export default function HeroSection({ query, setQuery }) {
   const dispatch = useDispatch();

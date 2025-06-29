@@ -1,8 +1,8 @@
 import { useState } from "react";
-import HeroSection from "../components/HeroSection";
-import RecipeSection from "../components/RecipeSection";
-import CommunitySection from "../components/ComunitySection";
-import CTASection from "../components/CTASection";
+import HeroSection from "../components/Home/HeroSection";
+import RecipeSection from "../components/Home/RecipeSection";
+import CommunitySection from "../components/Home/ComunitySection";
+import CTASection from "../components/Home/CTASection";
 
 export default function Home() {
   const [query, setQuery] = useState("");

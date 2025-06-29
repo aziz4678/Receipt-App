@@ -4,7 +4,7 @@ import {
   getCategories,
   getDefaultMeals,
   getMealsByCategory,
-} from "../../redux/RecipeSlice";
+} from "../../../redux/RecipeSlice";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Category() {
