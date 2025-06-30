@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Eye, EyeOff, User, Mail, Lock, ArrowRight } from "lucide-react";
+import { Eye, EyeOff, User, Mail,Lock, ChefHat, ArrowRight } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
 import SideInfo from "../components/Auth/SideInfo";
 import InputField from "../components/Auth/InputField";
@@ -71,9 +71,9 @@ export default function RegisterPage() {
         <div className="w-full bg-white/80 backdrop-blur-md border border-white/20 shadow-2xl rounded-3xl p-8">
           <div className="text-center mb-8">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-slate-900 rounded-2xl mb-4 shadow-lg">
-              <Lock className="w-8 h-8 text-white" />
+              <ChefHat className="w-8 h-8 text-white" />
             </div>
-            <h1 className="text-3xl font-bold text-slate-900 mb-1">Join MyReceipt</h1>
+            <h1 className="text-3xl font-bold text-slate-900 mb-1">Join MyRecipes</h1>
             <p className="text-gray-600 text-sm">Start your culinary adventure today</p>
           </div>
 
