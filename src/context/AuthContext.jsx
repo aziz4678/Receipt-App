@@ -76,16 +76,10 @@ export const AuthProvider = ({ children }) => {
   const register = useCallback(async (name, email, password, imageUrl) => {
     try {
       const res = await api.post("/auth/register", { name, email, password, imageUrl });
-      const { token, user } = res.data;
-
-      Cookies.set("auth_token", token, { expires: 1, secure: true, sameSite: "Strict" });
-      Cookies.set("user", JSON.stringify(user), { expires: 1, secure: true, sameSite: "Strict" });
-
-      setUser(user);
-      setIsAuthenticated(true);
 
       showAlert("success", "Registration Successful", "You can now log in to your account.", "green");
       return true;
+
     } catch (error) {
       console.error("Registration failed:", error);
       showAlert("error", "Registration Failed", error.response?.data?.msg || "An error occurred.", "red");

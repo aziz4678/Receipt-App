@@ -1,9 +1,22 @@
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../../context/AuthContext";
+import Swal from "sweetalert2";
 
 export default function RecipeCard({ meal }) {
   const navigate = useNavigate();
+  const { isAuthenticated } = useAuth();
 
   const handleClick = () => {
+    if (!isAuthenticated) {
+      Swal.fire({
+        icon: "warning",
+        title: "Login Required",
+        text: "You need to log in to view the recipe details.",
+        confirmButtonColor: "#F79F1A",
+      });
+      return;
+    }
+
     navigate(`/recipe/${meal.idMeal}`);
   };
 
